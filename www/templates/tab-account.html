@@ -5,20 +5,16 @@
     <div class="row">
       <ion-item class="col-20">Type</ion-item>
       <ion-item class="col">Total</ion-item>
-      <ion-item class="col">Jan</ion-item>
-      <ion-item class="col">Feb</ion-item>
-      <ion-item class="col">Mar</ion-item>
-      <ion-item class="col">Apr</ion-item>
-      <ion-item class="col">May</ion-item>
-      <ion-item class="col">Jun</ion-item>
-      <ion-item class="col">Jul</ion-item>
-      <ion-item class="col">Aug</ion-item>
-      <ion-item class="col">Sep</ion-item>
-      <ion-item class="col">Oct</ion-item>
-      <ion-item class="col">Nov</ion-item>
-      <ion-item class="col">Dec</ion-item>
+      <ion-item class="col">Devices</ion-item>
+      <ion-item class="col">Categories</ion-item>
+      <ion-item class="col">Locations</ion-item>
+      <ion-item class="col">Calls</ion-item>
+      <ion-item class="col">AdvEvents</ion-item>
+      <ion-item class="col">TTR</ion-item>
+      <ion-item class="col">CustSat</ion-item>
       <ion-item class="col">Action</ion-item>
     </div>
+
 
     <!-- Items -->
 
@@ -27,36 +23,26 @@
         <select ng-model="item.Type" ng-options="type for type in types"></select>
       </ion-item>
       <ion-item class="col">{{item.Total}}</ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Jan" ng-blur="updateItem($index, 'Jan')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Feb" ng-blur="updateItem($index, 'Feb')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Mar" ng-blur="updateItem($index, 'Mar')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Apr" ng-blur="updateItem($index, 'Apr')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.May" ng-blur="updateItem($index, 'May')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Jun" ng-blur="updateItem($index, 'Jun')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Jul" ng-blur="updateItem($index, 'Jul')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Aug" ng-blur="updateItem($index, 'Aug')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Sep" ng-blur="updateItem($index, 'Sep')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Oct" ng-blur="updateItem($index, 'Oct')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Nov" ng-blur="updateItem($index, 'Nov')"/></ion-item>
-      <ion-item class="col"><input type="text" ng-model="item.Dec" ng-blur="updateItem($index, 'Dec')"/></ion-item>
+      <ion-item class="col"><input type="text" ng-model="item.Devices" ng-blur="updateItem($index, 'Devices')"/></ion-item>
+      <ion-item class="col"><input type="text" ng-model="item.Categories" ng-blur="updateItem($index, 'Categories')"/></ion-item>
+      <ion-item class="col"><input type="text" ng-model="item.Locations" ng-blur="updateItem($index, 'Locations')"/></ion-item>
+      <ion-item class="col"><input type="text" ng-model="item.Calls" ng-blur="updateItem($index, 'Calls')"/></ion-item>
+      <ion-item class="col"><input type="text" ng-model="item.AdvEvents" ng-blur="updateItem($index, 'AdvEvents')"/></ion-item>
+      <ion-item class="col"><input type="text" ng-model="item.TTR" ng-blur="updateItem($index, 'TTR')"/></ion-item>
+      <ion-item class="col"><input type="text" ng-model="item.CustSat" ng-blur="updateItem($index, 'CustSat')"/></ion-item>
       <ion-item class="col"> <button ng-click="removeItem($index)" class="navbar-link">Del</button></ion-item>
     </div>
 
     <div class="row">
       <ion-item class="col-20">Totals</ion-item>
       <ion-item class="col">{{totals.Total}} </ion-item>
-      <ion-item class="col">{{totals.Jan}}</ion-item>
-      <ion-item class="col">{{totals.Feb}}</ion-item>
-      <ion-item class="col">{{totals.Mar}}</ion-item>
-      <ion-item class="col">{{totals.Apr}}</ion-item>
-      <ion-item class="col">{{totals.May}}</ion-item>
-      <ion-item class="col">{{totals.Jun}}</ion-item>
-      <ion-item class="col">{{totals.Jul}}</ion-item>
-      <ion-item class="col">{{totals.Aug}}</ion-item>
-      <ion-item class="col">{{totals.Sep}}</ion-item>
-      <ion-item class="col">{{totals.Oct}}</ion-item>
-      <ion-item class="col">{{totals.Nov}}</ion-item>
-      <ion-item class="col">{{totals.Dec}}</ion-item>
+      <ion-item class="col">{{totals.Devices}}</ion-item>
+      <ion-item class="col">{{totals.Categories}}</ion-item>
+      <ion-item class="col">{{totals.Locations}}</ion-item>
+      <ion-item class="col">{{totals.Calls}}</ion-item>
+      <ion-item class="col">{{totals.AdvEvents}}</ion-item>
+      <ion-item class="col">{{totals.TTR}}</ion-item>
+      <ion-item class="col">{{totals.CustSat}}</ion-item>
       <ion-item class="col"></ion-item>
     </div>
 
