@@ -83,14 +83,15 @@ angular.module('starter.controllers', [])
   $scope.updateTotals = function(){
     //Load Totals 
       $scope.totals = {"Year" : "2014", "Type":"",  
-      "Jan": $scope.getTotal('Jan'), "Feb": $scope.getTotal('Feb'), "Mar": $scope.getTotal('Mar'), 
-      "Apr": $scope.getTotal('Apr'), "May": $scope.getTotal('May'), "Jun": $scope.getTotal('Jun'), 
-      "Jul":$scope.getTotal('Jul'), "Aug": $scope.getTotal('Aug'), "Sep": $scope.getTotal('Sep'), 
-      "Oct": $scope.getTotal('Oct'), "Nov": $scope.getTotal('Nov'), "Dec": $scope.getTotal('Dec'), 
+      "Devices": $scope.getTotal('Devices'), "Categories": $scope.getTotal('Categories'), "Locations": $scope.getTotal('Locations'), 
+      "Calls": $scope.getTotal('Calls'), "AdvEvents": $scope.getTotal('AdvEvents'), "TTR": $scope.getTotal('TTR'), 
+      "CustSat":$scope.getTotal('CustSat'), 
       "Total": $scope.getTotal('Total') };
 
       $scope.updateLineChart($scope.totals);
   };
+
+  /* Disable charts for now 
 
   $scope.updateLineChart = function(){
       var t = $scope.totals; 
@@ -115,6 +116,7 @@ angular.module('starter.controllers', [])
       $scope.updateTotals();
     }
   });
-
+  
+  */
     
 });
