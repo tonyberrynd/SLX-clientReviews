@@ -1,6 +1,6 @@
 angular.module('starter.services', ['firebase'])
 
-.constant('FIREBASE_URI', 'https://slxaccountrevenue.firebaseio.com/')
+.constant('FIREBASE_URI', 'https://slx-clientreviews.firebaseio.com/')
 /**
  * A simple example service that returns some data.
  */

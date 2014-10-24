@@ -21,15 +21,15 @@ angular.module('starter.controllers', [])
 
   $scope.totals = {};
 
-  $scope.types = ['Repair', 'Maint', 'Storm']; 
+  $scope.types = ['Q3-14', 'Q2-14', 'Q1-14', 'Q4-13']; 
 
   $scope.data.chartData = Charts.getchartData();
   $scope.data.chartOptions = Charts.getchartOptions();
   $scope.data.lineChart = Charts.getlineChart();
 
   $scope.addItem = function () {
-    $scope.newItem = {"Year" : "2014", "Type":"", "Total": 0, "Jan": 0, "Feb": 0, "Mar": 0, "Apr": 0, "May": 0, "Jun": 0, 
-      "Jul":0, "Aug": 0, "Sep": 0, "Oct": 0, "Nov": 0, "Dec": 0 };
+    $scope.newItem = {"Year" : "2014", "Type":"", "Total": 0, "Devices": 0, "Categories": 0, "Locations": 0, "Calls": 0, "AdvEvents": 0, "TTR": 0, 
+      "CustSat":0};
 
     //ItemsService.addItem(angular.copy($scope.newItem));
     ItemsService.addItem($scope.newItem);
@@ -50,10 +50,9 @@ angular.module('starter.controllers', [])
       //Update row total before doing update 
       var item = $scope.items[index];
       item.Total = 
-        parseInt(item.Jan) + parseInt(item.Feb) + parseInt(item.Mar) +
-        parseInt(item.Apr) + parseInt(item.May) + parseInt(item.Jun) +
-        parseInt(item.Jul) + parseInt(item.Aug) + parseInt(item.Sep) +
-        parseInt(item.Oct) + parseInt(item.Nov) + parseInt(item.Dec);
+        parseInt(item.Devices) + parseInt(item.Categories) + parseInt(item.Locations) +
+        parseInt(item.Calls) + parseInt(item.AdvEvents) + parseInt(item.TTR) +
+        parseInt(item.CustSat);
 
       
       
